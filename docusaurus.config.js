@@ -83,7 +83,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Sobre',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -91,6 +91,11 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            to: '/docs/informações',
+            label: 'Informações',
+            position: 'left',
+          }
         ],
       },
       footer: {
