@@ -37,6 +37,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          showLastUpdateTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -83,30 +84,26 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Sobre',
+            label: 'Documentação',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Últimas Adições', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Projeto-Extensao-Grupo-03/docs-projeto',
             label: 'GitHub',
             position: 'right',
           },
-          {
-            to: '/docs/informações',
-            label: 'Informações',
-            position: 'left',
-          }
+        
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Docs Projeto',
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/intro', 
               },
             ],
           },
@@ -148,6 +145,16 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+    themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["pt"], // Configurado para buscar palavras em português
+      },
+    ],
+  ],
 };
+
 
 export default config;
