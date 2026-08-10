@@ -82,17 +82,32 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'documentacaoSidebar', // Tem que ter o mesmo nome que você colocou no sidebars.js
             position: 'left',
             label: 'Documentação',
           },
-          {to: '/blog', label: 'Últimas Adições', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar', // Conecta com a barra do tutorial
+            position: 'left',
+            label: 'Tutorial',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'informacoesSidebar', // Conecta com a barra de informações
+            position: 'left',
+            label: 'Informações',
+          },
+          {
+            to: '/blog', 
+            label: 'Últimas Adições', 
+            position: 'left'
+          },
           {
             href: 'https://github.com/Projeto-Extensao-Grupo-03/docs-projeto',
             label: 'GitHub',
             position: 'right',
           },
-        
         ],
       },
       footer: {
